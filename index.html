@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos Eisley Cantina · Tatooine's busiest watering hole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <!-- Your header and hero go here -->
+    <header class="sticky top-0 z-20 border-b border-white/10 bg-slate-950/60 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+          <a href="#" class="flex items-center gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-violet-500/20 text-sm font-semibold text-violet-300 ring-1 ring-violet-400/40">
+              ME
+            </span>
+            <span class="text-sm font-semibold tracking-wide text-white">Mos Eisley Cantina</span>
+          </a>
+      
+          <nav aria-label="Primary" class="flex items-center gap-6">
+            <a href="#features" class="text-sm text-slate-300 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+              Features
+            </a>
+            <a href="#menu" class="text-sm text-slate-300 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+              Menu
+            </a>
+            <a href="#live-music" class="text-sm text-slate-300 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+              Live music
+            </a>
+            <a href="#sign-in" class="text-sm text-slate-300 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+              Sign in
+            </a>
+            <a
+              href="#reserve"
+              class="rounded-full bg-violet-600 px-4 py-2 text-sm font-semibold text-white hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400"
+            >
+              Reserve a booth
+            </a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24">
+          <div>
+            <p class="mb-4 inline-flex rounded-full bg-violet-500/15 px-3 py-1 text-xs font-medium tracking-wide text-violet-200 ring-1 ring-violet-400/30">
+              Open every night, 3 ABY
+            </p>
+      
+            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              Find your watering hole on
+              <span class="bg-gradient-to-r from-violet-400 via-fuchsia-300 to-amber-300 bg-clip-text text-transparent">
+                Tatooine
+              </span>
+            </h1>
+      
+            <p class="mt-6 max-w-lg text-base leading-relaxed text-slate-300">
+              Mos Eisley Cantina serves smugglers, droids, and the occasional Jedi.
+              Cold drinks, live music, and a booth in the shadows — if you can keep
+              your blaster holstered.
+            </p>
+      
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="#reserve"
+                class="rounded-full bg-violet-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400"
+              >
+                Reserve a booth
+              </a>
+              <a
+                href="#menu"
+                class="rounded-full px-5 py-2.5 text-sm font-semibold text-slate-100 ring-1 ring-white/20 hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400"
+              >
+                See the menu
+              </a>
+            </div>
+          </div>
+      
+          <figure class="overflow-hidden rounded-2xl ring-1 ring-white/10">
+            <img
+              src="https://product-builder-fullstack.s3.eu-west-3.amazonaws.com/M02_Web-Foundation/unsplash-cantina.jpeg"
+              alt="Sand dunes under a Tatooine-like twin-sun sky"
+              class="h-full w-full object-cover"
+              width="1200"
+              height="800"
+            />
+            <figcaption class="border-t border-white/10 bg-slate-950/70 px-4 py-3 text-xs text-slate-400">
+              Outer Rim · Mos Eisley spaceport, just off the dusty main strip
+            </figcaption>
+          </figure>
+        </section>
+        <section id="features" aria-labelledby="features-title" class="mx-auto max-w-6xl px-6 py-20">
+            <!-- 
+              Ce bloc de code HTML présente une section de "features" (caractéristiques) pour la Mos Eisley Cantina.
+
+              1. <h2 id="features-title" class="sr-only">features</h2>
+                 - Titre de section invisible à l’écran mais accessible aux lecteurs d’écran (accessibilité).
+
+              2. <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                 - Grille qui s’adapte : une colonne sur mobile, trois sur écran large, avec espaces (gap) entre les éléments.
+
+                 À l’intérieur, trois <article> présentent chaque une caractéristique :
+
+                a. Premier article : 
+                   - Icône de verre pour “drinks”.
+                   - Titre : “Cold drinks”
+                   - Description : la cantina sert une clientèle variée, de contrebandiers jusqu’aux Jedi.
+
+                b. Deuxième article : 
+                   - Icône musicale.
+                   - Titre : “Live music”
+                   - Description : met en avant l’ambiance (boissons, musique, recoins discrets…).
+
+                c. Troisième article : 
+                   - Icône représentant des box/booths.
+                   - Titre : “A booth in the shadows”
+                   - Description : insiste sur l’ouverture tous les soirs dans un style “Star Wars”.
+
+                 Chaque article a des classes Tailwind CSS pour le style : fond translucide, effet “blur”, arrondi, effet hover, etc.
+                 Les icônes sont intégrées en SVG, colorées différemment selon l’article.
+
+              Cette section met donc en avant les trois grands atouts de cette cantina imaginaire dans l’univers de Star Wars.
+            -->
+            <h2 id="features-title" class="sr-only">features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <article class="flex flex-col items-start p-6 bg-white/[0.03] border border-white/10 rounded-2xl backdrop-blur transition hover:-translate-y-1">
+                <div class="size-12 flex items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-4">
+                  <!-- Icon: Drinks -->
+                  <svg class="w-6 h-6 text-violet-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 21h10M12 17v4M3 3h18l-1.4 6.45a5 5 0 0 1-9.2 0L3 3Z" /></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Cold drinks</h3>
+                <p class="text-slate-300 text-sm">Mos Eisley Cantina serves smugglers, droids, and the occasional Jedi.</p>
+              </article>
+              <article class="flex flex-col items-start p-6 bg-white/[0.03] border border-white/10 rounded-2xl backdrop-blur transition hover:-translate-y-1">
+                <div class="size-12 flex items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-4">
+                  <!-- Icon: Drinks -->
+                  <svg class="w-6 h-6 text-violet-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 21h10M12 17v4M3 3h18l-1.4 6.45a5 5 0 0 1-9.2 0L3 3Z" /></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Cold drinks</h3>
+                <p class="text-slate-300 text-sm">Mos Eisley Cantina serves smugglers, droids, and the occasional Jedi.</p>
+              </article>
+              <article class="flex flex-col items-start p-6 bg-white/[0.03] border border-white/10 rounded-2xl backdrop-blur transition hover:-translate-y-1">
+                <div class="size-12 flex items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-4">
+                  <!-- Icon: Music -->
+                  <svg class="w-6 h-6 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Live music</h3>
+                <p class="text-slate-300 text-sm">Cold drinks, live music, and a booth in the shadows — if you can keep your blaster holstered.</p>
+              </article>
+              <article class="flex flex-col items-start p-6 bg-white/[0.03] border border-white/10 rounded-2xl backdrop-blur transition hover:-translate-y-1">
+                <div class="size-12 flex items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-4">
+                  <!-- Icon: Booth -->
+                  <svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v13M6 21v-7h12v7" /></svg>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">A booth in the shadows</h3>
+                <p class="text-slate-300 text-sm">Open every night, 3 ABY</p>
+              </article>
+            </div>
+          </section>
+          
+      </main>
+ 
